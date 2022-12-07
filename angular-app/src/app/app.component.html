@@ -1,5 +1,13 @@
 <h1>Hello</h1>
-<form #loginPage="ngForm" (ngSubmit)=loginFunc(loginPage.value) >
+
+<!-- //Template Driven form -->
+<!-- <form #loginPage="ngForm" (ngSubmit)=loginFunc(loginPage.value) >
 <input type="text" placeholder="Enter name" name="name" ngModel />
 <button>Submit</button>
-</form>
+</form> -->
+
+<!-- Reactive Form -->
+<form [formGroup]="loginForm" (ngSubmit)="buttonSubmit()" >
+  <input type="text" placeholder="Enter name" name="name" formControlName="name" />
+  <button>Submit</button>
+  </form> 

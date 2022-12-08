@@ -1,8 +1,20 @@
 <h1>Hello</h1>
 
-<ul>
+<a routerLink="home">Home</a>
+<a routerLink="about">About</a>
+<a routerLink="data">Data</a>
+<a routerLink="aboutme">About me</a>
+
+<router-outlet></router-outlet>
+
+
+
+
+
+
+<!-- <ul>
   <li *ngFor="let items of userData">{{items.name}}</li>
-</ul>
+</ul> -->
 
 <!-- //Template Driven form -->
 <!-- <form #loginPage="ngForm" (ngSubmit)=loginFunc(loginPage.value) >

@@ -1,5 +1,9 @@
 <h1>Hello</h1>
 
+<ul>
+  <li *ngFor="let items of userData">{{items.name}}</li>
+</ul>
+
 <!-- //Template Driven form -->
 <!-- <form #loginPage="ngForm" (ngSubmit)=loginFunc(loginPage.value) >
 <input type="text" placeholder="Enter name" name="name" ngModel />
@@ -7,7 +11,7 @@
 </form> -->
 
 <!-- Reactive Form -->
-<form [formGroup]="loginForm" (ngSubmit)="buttonSubmit()" >
+<!-- <form [formGroup]="loginForm" (ngSubmit)="buttonSubmit()" >
   <input type="text" placeholder="Enter name" name="name" formControlName="name" />
   <button>Submit</button>
-  </form> 
+  </form>  -->

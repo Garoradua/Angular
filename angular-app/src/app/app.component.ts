@@ -7,6 +7,11 @@ import {FormGroup, FormControl} from '@angular/forms'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  userData=[
+    {name: "Gourav" ,Email:"gourav@test.com"},
+    {name: "Goru", Email: "goru@test.com"}
+  ];
   title = 'angular-app';
   loginFunc(item:any){
     console.log(item)
